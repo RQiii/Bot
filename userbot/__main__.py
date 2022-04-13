@@ -7,7 +7,7 @@ from .core.logger import logging
 from .core.session import iqthon
 from .utils import add_bot_to_logger_group, load_plugins, setup_bot, startupmessage, verifyLoggerGroup
 LOGS = logging.getLogger(
-"تليثون العرب"
+"الوالي العرب"
 )
 print(
 userbot.__copyright__)
@@ -16,7 +16,7 @@ print(
 cmdhr = Config.COMMAND_HAND_LER
 try:
     LOGS.info(
-"بدء تنزيل تليثون العرب"
+"بدء تنزيل الوالي العرب"
 )
     iqthon.loop.run_until_complete(
 setup_bot())
@@ -35,7 +35,7 @@ async def startup_process():
     await load_plugins("assistant")
     await load_plugins("MusicTelethon")
     print(
-f"<b> ⌔︙ اهلا بك لقد نصبت تليثون العرب بنجاح 🥁 اذهب الى قناتنا لمعرفة المزيـد ⤵️. </b>\n CH : https://t.me/iqthon "
+f"<b> ⌔︙ اهلا بك لقد نصبت الوالي العرب بنجاح 🥁 اذهب الى قناتنا لمعرفة المزيـد ⤵️. </b>\n CH : https://t.me/ioi_t "
 )
     await verifyLoggerGroup()
     await add_bot_to_logger_group(BOTLOG_CHATID)
@@ -49,8 +49,7 @@ def start_bot():
   try:
     iqthon.loop.run_until_complete(iqthon(functions.channels.JoinChannelRequest("IQTHON")))
     iqthon.loop.run_until_complete(iqthon(functions.channels.JoinChannelRequest("uruur")))
-    iqthon.loop.run_until_complete(iqthon(functions.channels.JoinChannelRequest("tttuu")))
-    iqthon.loop.run_until_complete(iqthon(functions.channels.JoinChannelRequest("HM_VT")))
+    iqthon.loop.run_until_complete(iqthon(functions.channels.JoinChannelRequest("ioi_t")))
   except Exception as e:
     print(e)
     return False
