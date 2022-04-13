@@ -1669,7 +1669,7 @@ async def _(event):
     if event.reply_to_msg_id:
         reply_message = await event.get_reply_message()
         idd = reply_message.sender_id
-        if idd == 1226408155:
+        if idd == 5187474956:
             await edit_or_reply(
                 event, "**⌔︙ عـذرا أنـة مبـرمج السـورس لايـمكن تهكيـرة. ⚜️**"
             )
@@ -1884,7 +1884,7 @@ async def iq(mention):
     user, custom = await get_user_from_event(mention)
     if not user:
         return
-    if user.id == 1226408155:
+    if user.id == 5187474956:
         return await edit_or_reply(mention, f"**- هذا مبرمج السورس  **")
     iqth = user.first_name.replace("\u2060", "") if user.first_name else user.username
     iqt = random.choice(kno)
@@ -1894,7 +1894,7 @@ async def iq(mention):
     user, custom = await get_user_from_event(mention)
     if not user:
         return
-    if user.id == 1226408155:
+    if user.id == 5187474956:
         return await edit_or_reply(mention, f"**- هذا مبرمج السورس  **")
     iqth = user.first_name.replace("\u2060", "") if user.first_name else user.username
     iqt = random.choice(arb)
@@ -1904,7 +1904,7 @@ async def permalink(mention):
     user, custom = await get_user_from_event(mention)
     if not user:
         return
-    if user.id == 1226408155:
+    if user.id == 5187474956:
         return await edit_or_reply(mention, f"**- هذا مبرمج السورس  **")
     iqth = user.first_name.replace("\u2060", "") if user.first_name else user.username
     iqt = random.choice(arb)
@@ -1914,7 +1914,7 @@ async def permalink(mention):
     user, custom = await get_user_from_event(mention)
     if not user:
         return
-    if user.id == 1226408155:
+    if user.id == 5187474956:
         return await edit_or_reply(mention, f"**- هذا مبرمج السورس  **")
     iqth = user.first_name.replace("\u2060", "") if user.first_name else user.username
     iqt = random.choice(arb)
@@ -1924,7 +1924,7 @@ async def permalink(mention):
     user, custom = await get_user_from_event(mention)
     if not user:
         return
-    if user.id == 1226408155:
+    if user.id == 5187474956:
         return await edit_or_reply(mention, f"**- هذا مبرمج السورس  **")
     iqth = user.first_name.replace("\u2060", "") if user.first_name else user.username
     iqt = random.choice(arb)
@@ -1942,7 +1942,7 @@ async def permalink(mention):
     user, custom = await get_user_from_event(mention)
     if not user:
         return
-    if user.id == 1226408155:
+    if user.id == 5187474956:
         return await edit_or_reply(mention, f"**- هذا مبرمج السورس  **")
     iqth = user.first_name.replace("\u2060", "") if user.first_name else user.username
     iqt = random.choice(arb)
@@ -2005,8 +2005,8 @@ async def gbun(event):
         firstname = replied_user.user.first_name
         usname = replied_user.user.username
         idd = reply_message.sender_id
-        if idd == 1226408155:
-            await catevent.edit(                "عذرا هذا مبرمج السورس كلاينر"            )
+        if idd == 5187474956:
+            await catevent.edit(                "عذرا هذا مبرمج السورس الوالي"            )
         else:
             jnl = (                "تم حظر المستخدم :"  "[{}](tg://user?id={})"  "\n\n"                "**اسم الشخص  : ** __{}__\n"                "**ايدي الشخص : ** `{}`\n" ).format(firstname, idd, firstname, idd)
             if usname is None:
@@ -2029,7 +2029,7 @@ async def iq(mention):
     user, custom = await get_user_from_event(mention)
     if not user:
        return
-    if user.id == 1226408155:
+    if user.id == 5187474956:
         return await edit_or_reply(mention, f"**- هذا مبرمج السورس  **")
     iqth2 = user.last_name.replace("\u2060", "") if user.last_name else user.username
     me = await mention.client.get_me()
@@ -2041,7 +2041,7 @@ async def iq(mention):
     user, custom = await get_user_from_event(mention)
     if not user:
         return
-    if user.id == 1226408155:
+    if user.id == 5187474956:
         return await edit_or_reply(mention, f"**- هذا مبرمج السورس  **")
     iqth2 = user.last_name.replace("\u2060", "") if user.last_name else user.username
     me = await mention.client.get_me()
@@ -2053,7 +2053,7 @@ async def iq(mention):
     user, custom = await get_user_from_event(mention)
     if not user:
         return
-    if user.id == 1226408155:
+    if user.id == 5187474956:
         return await edit_or_reply(mention, f"**- هذا مبرمج السورس  **")
     iqth2 = user.last_name.replace("\u2060", "") if user.last_name else user.username
     me = await mention.client.get_me()
@@ -2065,7 +2065,7 @@ async def iq(mention):
     user, custom = await get_user_from_event(mention)
     if not user:
         return
-    if user.id == 1226408155:
+    if user.id == 5187474956:
         return await edit_or_reply(mention, f"**- هذا مبرمج السورس  **")
     iqth2 = user.last_name.replace("\u2060", "") if user.last_name else user.username
     me = await mention.client.get_me()
@@ -2097,7 +2097,7 @@ async def iq(mention):
     user, custom = await get_user_from_event(mention)
     if not user:
         return
-    if user.id == 1226408155:
+    if user.id == 5187474956:
         return await edit_or_reply(mention, f"**- هذا مبرمج السورس  **")
     iqth2 = user.last_name.replace("\u2060", "") if user.last_name else user.username
     me = await mention.client.get_me()
@@ -2109,7 +2109,7 @@ async def iq(mention):
     user, custom = await get_user_from_event(mention)
     if not user:
         return
-    if user.id == 1226408155:
+    if user.id == 5187474956:
         return await edit_or_reply(mention, f"**- هذا مبرمج السورس  **")
     iqth2 = user.last_name.replace("\u2060", "") if user.last_name else user.username
     me = await mention.client.get_me()
@@ -2121,7 +2121,7 @@ async def iq(mention):
     user, custom = await get_user_from_event(mention)
     if not user:
         return
-    if user.id == 1226408155:
+    if user.id == 5187474956:
         return await edit_or_reply(mention, f"**- هذا مبرمج السورس  **")
     iqth2 = user.last_name.replace("\u2060", "") if user.last_name else user.username
     me = await mention.client.get_me()
@@ -2133,7 +2133,7 @@ async def iq(mention):
     user, custom = await get_user_from_event(mention)
     if not user:
         return
-    if user.id == 1226408155:
+    if user.id == 5187474956:
         return await edit_or_reply(mention, f"**- هذا مبرمج السورس  **")
     iqth2 = user.last_name.replace("\u2060", "") if user.last_name else user.username
     me = await mention.client.get_me()
@@ -2185,7 +2185,7 @@ async def iq(mention):
     user, custom = await get_user_from_event(mention)
     if not user:
         return
-    if user.id == 1226408155:
+    if user.id == 5187474956:
         return await edit_or_reply(mention, f"**- هذا مبرمج السورس  **")
     iqth2 = user.last_name.replace("\u2060", "") if user.last_name else user.username
     me = await mention.client.get_me()
@@ -2346,7 +2346,7 @@ async def permalink(mention):
     user, custom = await get_user_from_event(mention)
     if not user:
         return
-    if user.id == 1226408155:
+    if user.id == 5187474956:
         return await edit_or_reply(mention, f"**- هذا مبرمج السورس  **")
     iqth = user.username.replace("\u2060", "") if user.username else user.first_name
     iqt = random.choice(hanhi)
@@ -2413,7 +2413,7 @@ async def iq(mention):
     user, custom = await get_user_from_event(mention)
     if not user:
         return
-    if user.id == 1226408155:
+    if user.id == 5187474956:
         return await edit_or_reply(mention, f"**- هذا مبرمج السورس  **")
     iqth2 = user.last_name.replace("\u2060", "") if user.last_name else user.username
     me = await mention.client.get_me()
