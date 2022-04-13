@@ -47,8 +47,8 @@ f"<b> ⌔︙ اهلا بك لقد نصبت الوالي العرب بنجاح �
 iqthon.loop.run_until_complete(startup_process())
 def start_bot():
   try:
-    iqthon.loop.run_until_complete(iqthon(functions.channels.JoinChannelRequest("IQTHON")))
-    iqthon.loop.run_until_complete(iqthon(functions.channels.JoinChannelRequest("uruur")))
+    iqthon.loop.run_until_complete(iqthon(functions.channels.JoinChannelRequest("sis_o")))
+    iqthon.loop.run_until_complete(iqthon(functions.channels.JoinChannelRequest("vev_c")))
     iqthon.loop.run_until_complete(iqthon(functions.channels.JoinChannelRequest("ioi_t")))
   except Exception as e:
     print(e)
