@@ -85,6 +85,7 @@ async def _(event):
                 "-𝐓𝐇𝐔𝐑𝐒𝐃𝐀𝐘.♡\n"
                 "-𝐅𝐑𝐈𝐃𝐀𝐘.♡\n"
                 "-𝐒𝐀𝐓𝐔𝐑𝐃𝐀𝐘.♡"
+                "-WALE SOURCE."
             )
 @iqthon.on(admin_cmd(pattern="المواليد(?: |$)(.*)"))
 async def _(event):
