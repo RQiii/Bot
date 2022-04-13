@@ -257,32 +257,11 @@ async def _(event):
         LOGS1.error(e)
 @iqthon.on(admin_cmd(pattern="مساعده(?:\s|$)([\s\S]*)"))
 async def permalink(mention):
-    await edit_or_reply(mention, f"""• لتغير شكل امر السورس او  الفحص اضغط هنا  ↶
-https://t.me/Teamtelethon/36
-  • لتغير صوره او فيديو امر الفحص اضغط هنا ↶
-https://t.me/Teamtelethon/39
-  • لتغير كليشة امر حماية الخاص اضغط هنا ↶
-https://t.me/Teamtelethon/35
-  • لوضع صوره او فيديو حماية الخاص اضغط هنا ↶
-https://t.me/Teamtelethon/38
-  • لتغير عدد تحذيرات حماية الخاص اضغط هنا ↶
-https://t.me/Teamtelethon/45
-  • لتغير نبذه الوقتيه اضغط هنا ↶
-https://t.me/Teamtelethon/54
-  • لتغير صوره وقتيه اضغط هنا ↶
- https://t.me/Teamtelethon/46 
-  • لتغير خط زخرفه اسم وقتي اضغط هنا ↶
- https://t.me/Teamtelethon/59
-  •  لوضع ايموجي بجانب اسم وقتي اضغط هنا ↶
- https://t.me/Teamtelethon/37
-• لتغير امر من الاوامر اضغط هنا ↶
-https://t.me/L3LL3/4718
-• لكيفيه حذف الفار اضغط هنا ↶
-https://t.me/Teamtelethon/51
+    await edit_or_reply(mention, f"""• اذا كنت تحتاج للمساعدة الرجاء الذهاب الى 
 
-قناة الكلايش  : @FGFFG
-قناه شروحات الاوامر  : @L3LL3
-قناه المتغيرات او الفارات : @teamtelethon""")
+المطور  : @oipu1
+قناة السورس  : @ioi_t
+قناة معلومات الوالي : @KZR_666""")
 @iqthon.on(admin_cmd(pattern="اطفاء مؤقت( [0-9]+)?$"))    
 async def _(event):
     if " " not in event.pattern_match.group(1):
@@ -323,7 +302,7 @@ async def bad(event):
             vname = oldvars[vname]
         if cmd == "اضف":
             if not vinfo and vname == "ALIVE_TEMPLATE":
-                return await edit_delete(event, f"**☭︙  📑 يرجى متابع قناه الفارات تجدها هنا : @iqthon")
+                return await edit_delete(event, f"**☭︙  📑 يرجى متابع قناه السورس تجدها هنا : @ioi_t")
             if not vinfo and vname == "PING_IQ":
                 return await edit_delete(event, f"**☭︙ قم بكتابة الامـر بـشكل صحـيح  :  .اضف فار PING_TEXT النص الخاص بك**")
             if not vinfo:
@@ -572,7 +551,7 @@ if Config.TG_BOT_USERNAME is not None and tgbot is not None:
         query = iqthon.text
         await bot.get_me()
         if query.startswith("تنصيب") and iqthon.query.user_id == bot.uid:
-            buttons = [[Button.url("1- شرح التنصيب", "https://youtu.be/44tYK_yV02Q"), Button.url("2- استخراج ايبيات", "https://my.telegram.org/"),],[Button.url("3- ستخراج تيرمكس", "https://replit.com/@telethon-Arab/generatestringsession#start.sh"), Button.url("4- بوت فاذر", "http://t.me/BotFather"),],[Button.url("5- رابط التنصيب", "https://dashboard.heroku.com/new?template=https://github.com/telethon-Arab/telethohelp"),],[Button.url("المطـور 👨🏼‍💻", "https://t.me/LLL5L"),]]
+            buttons = [[Button.url("1- قناة السورس", "https://t.me/ioi_t"), Button.url("2- استخراج ايبيات", "https://my.telegram.org/"),],[Button.url("3- ستخراج تيرمكس", "https://replit.com/@telethon-Arab/generatestringsession#start.sh"), Button.url("4- بوت فاذر", "http://t.me/BotFather"),],[Button.url("5- رابط التنصيب", "https://dashboard.heroku.com/new?template=https://github.com/WALEUSERBOT/WALEUSERHELP"),],[Button.url("المطـور 👨🏼‍💻", "https://t.me/oipu1"),]]
             if IQTHONPC and IQTHONPC.endswith((".jpg", ".png", "gif", "mp4")):
                 result = builder.photo(IQTHONPC, text=help1, buttons=buttons, link_preview=False)
             elif IQTHONPC:
@@ -640,7 +619,7 @@ async def inlineiqthon(iqthon):
     await iqthon.edit(text, buttons=buttons)
 @iqthon.on(admin_cmd(pattern=f"{ORDERS}(?: |$)(.*)"))    
 async def iq(event):
-    await edit_or_reply(event, """✐  ⦗ اوامـر سـورس تـليثون العـرب ⦘
+    await edit_or_reply(event, """✐  ⦗ اوامـر سـورس الوالي ⦘
                                              ┉┉┉┉┉┉×┉┉┉┉┉
 〖`.م1`〗⏎  اوامر الحساب 1
 〖`.م2`〗⏎  اوامر الحساب 2
@@ -714,7 +693,7 @@ async def iq(event):
 ⑺ ⦙ `.فايروس`
 **✐  :  يرسل فايروس الى المجموعه او الدردشه ويقوم بتعليقها**
 ⤪⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⤮
-⦑   شرح الاوامر : @L3LL3   ⦒""")
+⦑   شرح الاوامر : @ioi_t   ⦒""")
 @iqthon.on(admin_cmd(pattern="م25(?: |$)(.*)"))    
 async def iq(event):
     await edit_or_reply(event, "**🚹  ⦑   اوامر الكروب 6    ⦒  :** \n\n⤪⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⤮ \n\n⑴  ⦙ `.حظر عام + الرد على شخص` \n**✐ : يحضر الشخص من جميع الكروبات الي عندك  ❝** \n ⤪⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⤮ \n⑵  ⦙ `.الغاء حظر عام + الرد على شخص` \n**✐ :  يلغي حضر العام للشخص  ❝** \n⑶  ⦙ `.المحظورين عام` \n**✐ :   يضهر الك جميع الاشخاص الي حاضرهم عام ❝** \n ⤪⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⤮ \n⑷  ⦙ `.تقيد + الرد على شخص` \n**✐ : يقيد الشخص من المجموعة ❝** \n ⤪⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⤮ \n⑸  ⦙ `.اكتم + الوقت بثواني + المدة` \n**✐ : كتم وقتي للشخص سوف نشرح الامر هنا : @L3LL3❝**\n ⤪⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⤮ \n⑹ ⦙ `.احظر + الوقت بثواني + المدة` \n**✐ : حظر وقتي للشخص سوف نشرح الامر هنا : @L3LL3 ❝**\n⤪⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⤮\n")
@@ -765,7 +744,7 @@ async def iq(event):
 ⑼ ⦙ `.لوقو + الاسم`
 **✐  : يقوم بصنع logo خاص بك**
 ============================
-  ⦑   شرح الاوامر : @L3LL3   ⦒""")
+  ⦑   شرح الاوامر : @ioi_t   ⦒""")
 @iqthon.on(admin_cmd(pattern="م31(?: |$)(.*)"))    
 async def iq(event):
     await edit_or_reply(event, """**🚹  ⦑   اوامر الملصقات   ⦒  : **
@@ -779,7 +758,7 @@ async def iq(event):
 ⑷ ⦙ `.ملصق + اسم الحزمه او الملصق`
 **✐  : يبحث عن اسم الحزمه او الملصق ويجلبه اليك**
 ============================
-  ⦑   شرح الاوامر : @L3LL3   ⦒""")
+  ⦑   شرح الاوامر : @ioi_t   ⦒""")
 
 @iqthon.tgbot.on(CallbackQuery(data=re.compile(rb"ordahln1")))
 @check_owner
