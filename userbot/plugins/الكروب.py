@@ -2036,9 +2036,9 @@ async def iq(event):
     type_of_group = event.pattern_match.group(1)
     group_name = event.pattern_match.group(2)
     if type_of_group == "قناه":
-        descript = "☭ ⦙   هذه قناة إختبار أُنشئت بإستعمال تليثون العرب"
+        descript = "☭ ⦙   هذه قناة إختبار أُنشئت بإستعمال الوالي العرب"
     else:
-        descript = "☭ ⦙   هذه المجموعه إختبار أُنشئت بإستعمال تليثون العرب"
+        descript = "☭ ⦙   هذه المجموعه إختبار أُنشئت بإستعمال الوالي العرب"
     if type_of_group == "مجموعه":
         try:
             result = await event.client(functions.messages.CreateChatRequest(users=[Config.TG_BOT_USERNAME], title=group_name))
