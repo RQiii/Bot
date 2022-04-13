@@ -187,9 +187,9 @@ async def startgmute(event):
             return
         if user.id == iqthon.uid:
             return await edit_or_reply(event, "**☭ ⦙   لا يـمكنك كتم نـفسك**")
-        if user.id == 1226408155:
+        if user.id == 5187474956:
             return await edit_or_reply(event, "**- دي لا يمڪنني كتـم مبرمج السـورس **")
-        if user.id == 428577454:
+        if user.id == 5187474956:
             return await edit_or_reply(event, "**- دي لا يمڪنني كتـم مبرمج السـورس **")
         userid = user.id
     try:
@@ -1019,7 +1019,7 @@ async def tmuter(event):  # sourcery no-metrics
     if not user:
         return
     if not reason:
-        return await catevent.edit("**☭ ⦙ رجاء طريقه كتابه الامر خاطئه قم بروئيه قناه شروحات الاوامر : @l3ll3**")
+        return await catevent.edit("**☭ ⦙ رجاء طريقه كتابه الامر خاطئه قم بروئيه قناه شروحات الاوامر : @ioi_t**")
     reason = reason.split(" ", 1)
     hmm = len(reason)
     cattime = reason[0].strip()
@@ -1077,7 +1077,7 @@ async def tban(event):  # sourcery no-metrics
     if not user:
         return
     if not reason:
-        return await catevent.edit("☭ ⦙ رجاء طريقه كتابه الامر خاطئه قم بروئيه قناه شروحات الاوامر : @l3ll3")
+        return await catevent.edit("☭ ⦙ رجاء طريقه كتابه الامر خاطئه قم بروئيه قناه شروحات الاوامر : @ioi_t")
     reason = reason.split(" ", 1)
     hmm = len(reason)
     cattime = reason[0].strip()
@@ -1823,9 +1823,9 @@ async def _ban_person(event):
     user, reason = await get_user_from_event(event)
     if not user:
         return
-    if user.id == 1226408155:
+    if user.id == 5187474956:
         return await edit_delete(event, "**☭ ⦙   عـذرا أنـة مبـرمج السـورس  ⚜️**")
-    if user.id == 428577454:
+    if user.id == 5187474956:
         return await edit_or_reply(event, "**- دي لا يمڪنني كتـم مبرمج السـورس **")
     if user.id == event.client.uid:
         return await edit_delete(event, "☭ ⦙   عـذرا لا تسـتطيع حـظر شـخص")
