@@ -2,16 +2,16 @@ import time
 import heroku3
 from .Config import Config
 from .core.logger import logging
-from .core.session import iqthon
+from .core.session import rekhso
 from .sql_helper.globals import addgvar, delgvar, gvarstatus
 __version__ = "7.6"
 __license__ = "GNU Affero General Public License v3.0"
-__author__ = "<t.me/iqthon>"
+__author__ = "<t.me/rekhso>"
 __copyright__ = "telethon AR (C) 2020 - 2021  " + __author__
-iqthon.version = __version__
-iqthon.tgbot.version = __version__
-LOGS = logging.getLogger("IQTHON")
-bot = iqthon
+rekhso.version = __version__
+rekhso.tgbot.version = __version__
+LOGS = logging.getLogger("rekhso")
+bot = rekhso
 StartTime = time.time()
 catversion = "7.6"
 if Config.UPSTREAM_REPO == "Deou":
