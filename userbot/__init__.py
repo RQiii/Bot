@@ -11,7 +11,7 @@ __copyright__ = "telethon AR (C) 2020 - 2021  " + __author__
 iqthon.version = __version__
 iqthon.tgbot.version = __version__
 LOGS = logging.getLogger("rekhso")
-bot = rekhso
+bot = iqthon
 StartTime = time.time()
 catversion = "7.6"
 if Config.UPSTREAM_REPO == "Deou":
