@@ -13,7 +13,7 @@ from ..core.session import iqthon
 from ..helpers.utils import install_pip
 from ..sql_helper.global_collection import del_keyword_collectionlist, get_item_collectionlist
 from ..sql_helper.globals import addgvar, delgvar, gvarstatus
-from .klanr import load_module
+from .deou import load_module
 from .tools import create_supergroup
 LOGS = logging.getLogger(" سورس ديو \n ")
 cmdhr = Config.COMMAND_HAND_LER
