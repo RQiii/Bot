@@ -7,7 +7,7 @@ from .core.logger import logging
 from .core.session import iqthon
 from .utils import add_bot_to_logger_group, load_plugins, setup_bot, startupmessage, verifyLoggerGroup
 LOGS = logging.getLogger(
-"الوالي العرب"
+"ديــو"
 )
 print(
 userbot.__copyright__)
@@ -16,7 +16,7 @@ print(
 cmdhr = Config.COMMAND_HAND_LER
 try:
     LOGS.info(
-"بدء تنزيل الوالي العرب"
+"بدء تنزيل سورس ديو"
 )
     iqthon.loop.run_until_complete(
 setup_bot())
@@ -35,7 +35,7 @@ async def startup_process():
     await load_plugins("assistant")
     await load_plugins("MusicTelethon")
     print(
-f"<b> ⌔︙ اهلا بك لقد نصبت الوالي العرب بنجاح 🥁 اذهب الى قناتنا لمعرفة المزيـد ⤵️. </b>\n CH : https://t.me/ioi_t "
+f"<b> ⌔︙ اهلا بك لقد نصبت سورس ديو بنجاح 🥁 اذهب الى قناتنا لمعرفة المزيـد ⤵️. </b>\n CH : @pmmvn "
 )
     await verifyLoggerGroup()
     await add_bot_to_logger_group(BOTLOG_CHATID)
