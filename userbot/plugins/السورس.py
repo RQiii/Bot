@@ -123,7 +123,7 @@ fahs = """.🇮🇶 : me  {my_mention}  𓇡.
 .🇮🇶 : Source  : @pmmvn  𓇡."""
 @iqthon.on(admin_cmd(pattern="رابط التنصيب(?: |$)(.*)"))    
 async def source(e):
-    await edit_or_reply(e, "https://github.com/telethonAr/TelethonArab",)
+    await edit_or_reply(e, "https://v.ht/3LBy",)
 @iqthon.on(admin_cmd(pattern="حساب كيثاب( -l(\d+))? ([\s\S]*)"))    
 async def _(event):
     reply_to = await reply_id(event)
