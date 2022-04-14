@@ -1,4 +1,4 @@
-from userbot import BOTLOG, BOTLOG_CHATID, rekhso
+from userbot import BOTLOG, BOTLOG_CHATID, iqthon
 
 from ..Config import Config
 from ..core.inlinebot import *
