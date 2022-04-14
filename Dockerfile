@@ -1,6 +1,6 @@
-FROM telethonAr/telethonArab:slim-buster
+FROM RQiii/Bot:slim-buster
 
-RUN git clone https://github.com/WALEUSERBOT/WALEUSERBOT /root/userbot
+RUN git clone https://github.com/RQiii/Bot /root/userbot
 WORKDIR /root/userbot
 
 ## Install requirements
