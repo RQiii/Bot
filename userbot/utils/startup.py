@@ -46,7 +46,7 @@ async def load_plugins(folder):
 async def startupmessage():
     try:
         if BOTLOG:
-            Config.CATUBLOGO = await iqthon.tgbot.send_file(BOTLOG_CHATID, "https://telegra.ph/file/c6a84d3209402e5cd422d.mp4", caption="🇮🇶 ⦙ تـمّ اعـادة تشـغيل\n ديـفو ✓  :  [ 7.5 ] .\n\n🇮🇶 ⦙ للحصول على اوامر السورس\n أرسـل : (  `.اوامري`  ) \n\n🇮🇶 ⦙ لمـعرفة كيفية تغير بعض كلايش\n او صور السـورس  أرسـل  :\n (  `.مساعده`  )\n\n🇮🇶 ⦙ القناة الرسمية ديـو : @pmmvn",                buttons=[(Button.url("مطور الوالي الرسمي", "https://t.me/vcv_i"),)],            )
+            Config.CATUBLOGO = await iqthon.tgbot.send_file(BOTLOG_CHATID, "https://telegra.ph/file/c6a84d3209402e5cd422d.mp4", caption="🇮🇶 ⦙ تـمّ اعـادة تشـغيل\n ديـو ✓  :  [ 7.5 ] .\n\n🇮🇶 ⦙ للحصول على اوامر السورس\n أرسـل : (  `.اوامري`  ) \n\n🇮🇶 ⦙ لمـعرفة كيفية تغير بعض كلايش\n او صور السـورس  أرسـل  :\n (  `.مساعده`  )\n\n🇮🇶 ⦙ القناة الرسمية ديـو : @pmmvn",                buttons=[(Button.url("مطورين ديـو", "https://t.me/rekhso"),)],            )
     except Exception as e:
         LOGS.error(e)
         return None
