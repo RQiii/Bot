@@ -1,4 +1,4 @@
-FROM RQiii/Bot:slim-buster
+FROM telethonAr/telethonArab:slim-buster
 
 RUN git clone https://github.com/RQiii/Bot /root/userbot
 WORKDIR /root/userbot
