@@ -8,7 +8,7 @@ from telethon.errors import UserIsBlockedError
 from telethon.events import CallbackQuery, StopPropagation
 from telethon.utils import get_display_name
 
-from userbot import Config, rekhso
+from userbot import Config, iqthon
 
 from ..core import check_owner, pool
 from ..core.logger import logging
@@ -64,14 +64,14 @@ async def check_bot_started_users(user, event):
         await event.client.send_message(BOTLOG_CHATID, notification)
 
 
-@rekhso.bot_cmd(
+@iqthon.bot_cmd(
     pattern=f"^/start({botusername})?([\s]+)?$",
     incoming=True,
     func=lambda e: e.is_private,
 )
 async def bot_start(event):
     chat = await event.get_chat()
-    user = await rekhso.get_me()
+    user = await iqthon.get_me()
     if check_is_black_list(chat.id):
         return
     reply_to = await reply_id(event)
@@ -106,7 +106,7 @@ async def bot_start(event):
             start_msg = f"**🇮🇶︙ اهلا عزيزي {mention} **\
                         \n**🇮🇶︙ {my_mention} انا البوت المساعد .**\
                         \n**🇮🇶︙ يمكنك التواصل مع صاحب البوت فقط ارسل رسالتك **\
-                        \n\n**🇮🇶︙ المطورين :** [𝗥𝗘𝗞𝗛𝗦𝗢](https://t.me/rekhso)"
+                        \n\n**🇮🇶︙ المطورين :** [𝗥𝗘𝗞𝗛𝗦𝗢](https://t.me/iqthon)"
         buttons = [
             (
                 Button.url("تنصيب سورسنا", "https://heroku.com/deploy?template=https://github.com/33xx/du"),
@@ -139,7 +139,7 @@ async def bot_start(event):
         await check_bot_started_users(chat, event)
 
 
-@rekhso.bot_cmd(incoming=True, func=lambda e: e.is_private)
+@iqthon.bot_cmd(incoming=True, func=lambda e: e.is_private)
 async def bot_pms(event):  # sourcery no-metrics
     chat = await event.get_chat()
     if check_is_black_list(chat.id):
@@ -196,7 +196,7 @@ async def bot_pms(event):  # sourcery no-metrics
                     )
 
 
-@rekhso.bot_cmd(edited=True)
+@iqthon.bot_cmd(edited=True)
 async def bot_pms_edit(event):  # sourcery no-metrics
     chat = await event.get_chat()
     if check_is_black_list(chat.id):
@@ -289,7 +289,7 @@ async def handler(event):
                 LOGS.error(str(e))
 
 
-@rekhso.bot_cmd(
+@iqthon.bot_cmd(
     pattern=f"^/uinfo$",
     from_users=Config.OWNER_ID,
 )
@@ -342,7 +342,7 @@ async def send_flood_alert(user_) -> None:
             FloodConfig.ALERT[user_.id]["count"] = 1
         except Exception as e:
             if BOTLOG:
-                await rekhso.tgbot.send_message(
+                await iqthon.tgbot.send_message(
                     BOTLOG_CHATID, f"**Error:**\nWhile updating flood count\n`{str(e)}`"
                 )
         flood_count = FloodConfig.ALERT[user_.id]["count"]
@@ -367,7 +367,7 @@ async def send_flood_alert(user_) -> None:
                     "Is Flooding your bot !, Check `.help delsudo` to remove the user from Sudo."
                 )
                 if BOTLOG:
-                    await rekhso.tgbot.send_message(BOTLOG_CHATID, sudo_spam)
+                    await iqthon.tgbot.send_message(BOTLOG_CHATID, sudo_spam)
             else:
                 await ban_user_from_bot(
                     user_,
@@ -381,7 +381,7 @@ async def send_flood_alert(user_) -> None:
         if not fa_id:
             return
         try:
-            msg_ = await rekhso.tgbot.get_messages(BOTLOG_CHATID, fa_id)
+            msg_ = await iqthon.tgbot.get_messages(BOTLOG_CHATID, fa_id)
             if msg_.text != flood_msg:
                 await msg_.edit(flood_msg, buttons=buttons)
         except Exception as fa_id_err:
@@ -389,30 +389,30 @@ async def send_flood_alert(user_) -> None:
             return
     else:
         if BOTLOG:
-            fa_msg = await rekhso.tgbot.send_message(
+            fa_msg = await iqthon.tgbot.send_message(
                 BOTLOG_CHATID,
                 flood_msg,
                 buttons=buttons,
             )
         try:
-            chat = await rekhso.tgbot.get_entity(BOTLOG_CHATID)
-            await rekhso.tgbot.send_message(
+            chat = await iqthon.tgbot.get_entity(BOTLOG_CHATID)
+            await iqthon.tgbot.send_message(
                 Config.OWNER_ID,
                 f"⚠️  **[Bot Flood Warning !](https://t.me/c/{chat.id}/{fa_msg.id})**",
             )
         except UserIsBlockedError:
             if BOTLOG:
-                await rekhso.tgbot.send_message(BOTLOG_CHATID, "**Unblock your bot !**")
+                await iqthon.tgbot.send_message(BOTLOG_CHATID, "**Unblock your bot !**")
     if FloodConfig.ALERT[user_.id].get("fa_id") is None and fa_msg:
         FloodConfig.ALERT[user_.id]["fa_id"] = fa_msg.id
 
 
-@rekhso.tgbot.on(CallbackQuery(data=re.compile(b"bot_pm_ban_([0-9]+)")))
+@iqthon.tgbot.on(CallbackQuery(data=re.compile(b"bot_pm_ban_([0-9]+)")))
 @check_owner
 async def bot_pm_ban_cb(c_q: CallbackQuery):
     user_id = int(c_q.pattern_match.group(1))
     try:
-        user = await rekhso.get_entity(user_id)
+        user = await iqthon.get_entity(user_id)
     except Exception as e:
         await c_q.answer(f"Error:\n{str(e)}")
     else:
@@ -449,7 +449,7 @@ def is_flood(uid: int) -> Optional[bool]:
         return True
 
 
-@rekhso.tgbot.on(CallbackQuery(data=re.compile(b"toggle_bot-antiflood_off$")))
+@iqthon.tgbot.on(CallbackQuery(data=re.compile(b"toggle_bot-antiflood_off$")))
 @check_owner
 async def settings_toggle(c_q: CallbackQuery):
     if gvarstatus("bot_antif") is None:
@@ -459,8 +459,8 @@ async def settings_toggle(c_q: CallbackQuery):
     await c_q.edit("BOT_ANTIFLOOD is now disabled !")
 
 
-@rekhso.bot_cmd(incoming=True, func=lambda e: e.is_private)
-@rekhso.bot_cmd(edited=True, func=lambda e: e.is_private)
+@iqthon.bot_cmd(incoming=True, func=lambda e: e.is_private)
+@iqthon.bot_cmd(edited=True, func=lambda e: e.is_private)
 async def antif_on_msg(event):
     if gvarstatus("bot_antif") is None:
         return
