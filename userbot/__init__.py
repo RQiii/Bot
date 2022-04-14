@@ -2,7 +2,7 @@ import time
 import heroku3
 from .Config import Config
 from .core.logger import logging
-from .core.session import rekhso
+from .core.session import iqthon
 from .sql_helper.globals import addgvar, delgvar, gvarstatus
 __version__ = "7.6"
 __license__ = "GNU Affero General Public License v3.0"
