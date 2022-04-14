@@ -1,1 +1,1 @@
-from .iqthon_config import Config
+from .rekhso_config import Config
