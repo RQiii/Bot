@@ -10,7 +10,7 @@ from telethon import Button, types, version
 from telethon.errors import QueryIdInvalidError
 from telethon.events import CallbackQuery, InlineQuery
 from youtubesearchpython import VideosSearch
-from userbot import rekhso, catversion, StartTime
+from userbot import iqthon, catversion, StartTime
 from ..Config import Config
 from ..helpers.functions import rand_key, catalive, check_data_base_heal_th, get_readable_time
 from ..helpers.functions.utube import download_button, get_yt_video_id, get_ytthumb, result_formatter, ytsearch_data
@@ -38,7 +38,7 @@ def ibuild_keyboard(buttons):
             keyb.append([Button.url(btn[0], btn[1])])
     return keyb
 
-@rekhso.tgbot.on(InlineQuery)
+@iqthon.tgbot.on(InlineQuery)
 async def inline_handler(event):  
     builder = event.builder
     result = None
@@ -51,7 +51,7 @@ async def inline_handler(event):
     if query_user_id == Config.OWNER_ID or query_user_id in Config.SUDO_USERS:
         hmm = re.compile("همسه (.*) (.*)")
         match = re.findall(hmm, query)
-        if query.startswith("**rekhsobot"):
+        if query.startswith("**iqthonbot"):
             buttons = [
                 (
                     Button.inline("السورس", data="stats"),
@@ -312,12 +312,12 @@ async def inline_handler(event):
             url=CATLOGO, size=0, mime_type="image/jpeg", attributes=[]
         )
         text, msg_entities = await event.client._parse_message_text(
-            "rekhso.", "md"
+            "iqthon.", "md"
         )
         result = types.InputBotInlineResult(
             id=str(uuid4()),
             type="photo",
-            title="rekhso",
+            title="iqthon",
             description="نصب لنفسك",
             url="https://heroku.com/deploy?template=https://github.com/33xx/du",
             thumb=photo,
@@ -327,14 +327,14 @@ async def inline_handler(event):
             ),
         )
         await event.answer([result] if result else None)
-@rekhso.tgbot.on(CallbackQuery(data=re.compile(b"close")))
+@iqthon.tgbot.on(CallbackQuery(data=re.compile(b"close")))
 @check_owner
 async def on_plug_in_callback_query_handler(event):
     buttons = [
         (Button.inline("Open Menu", data="mainmenu"),),
     ]
     await event.edit("Menu Closed", buttons=buttons)
-@rekhso.tgbot.on(CallbackQuery(data=re.compile(rb"mainmenu")))
+@iqthon.tgbot.on(CallbackQuery(data=re.compile(rb"mainmenu")))
 @check_owner
 async def on_plug_in_callback_query_handler(event):
     _result = main_menu()
