@@ -1,4 +1,4 @@
 from ..helpers.progress import *
 from .decorators import *
-from .klanr import *
+from .deou import *
 from .startup import *
