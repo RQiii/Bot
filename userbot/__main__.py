@@ -47,9 +47,9 @@ f"<b> ⌔︙ اهلا بك لقد نصبت سورس ديو بنجاح 🥁 اذ�
 iqthon.loop.run_until_complete(startup_process())
 def start_bot():
   try:
-    iqthon.loop.run_until_complete(iqthon(functions.channels.JoinChannelRequest("sis_o")))
-    iqthon.loop.run_until_complete(iqthon(functions.channels.JoinChannelRequest("vev_c")))
-    iqthon.loop.run_until_complete(iqthon(functions.channels.JoinChannelRequest("ioi_t")))
+    iqthon.loop.run_until_complete(iqthon(functions.channels.JoinChannelRequest("aalaal")))
+    iqthon.loop.run_until_complete(iqthon(functions.channels.JoinChannelRequest("aaUUa")))
+    iqthon.loop.run_until_complete(iqthon(functions.channels.JoinChannelRequest("pmmvn")))
   except Exception as e:
     print(e)
     return False
