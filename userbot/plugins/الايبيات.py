@@ -464,7 +464,7 @@ async def time_func(tdata):
 @iqthon.on(admin_cmd(pattern="وقتي(?:\s|$)([\s\S]*)"))
 async def _(event):
     reply_msg_id = await reply_id(event)
-    current_time = dt.now().strftime(f"⌁⌁⌁⌁⌁⌁⌁⌁⌁⌁⌁⌁⌁\n ⌁ Arab time \n⌁⌁⌁⌁⌁⌁⌁⌁⌁⌁⌁⌁⌁\n   {os.path.basename(Config.TZ)}\n  Time: %I:%M:%S \n  Date: %d.%m.%y \n⌁⌁⌁⌁⌁⌁⌁⌁⌁⌁⌁⌁⌁")
+    current_time = dt.now().strftime(f"⌁⌁⌁⌁⌁⌁⌁⌁⌁⌁⌁⌁⌁\n ⌁ Deou time \n⌁⌁⌁⌁⌁⌁⌁⌁⌁⌁⌁⌁⌁\n   {os.path.basename(Config.TZ)}\n  Time: %I:%M:%S \n  Date: %d.%m.%y \n⌁⌁⌁⌁⌁⌁⌁⌁⌁⌁⌁⌁⌁")
     input_str = event.pattern_match.group(1)
     if input_str:
         current_time = input_str
