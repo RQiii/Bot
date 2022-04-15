@@ -187,9 +187,9 @@ async def startgmute(event):
             return
         if user.id == iqthon.uid:
             return await edit_or_reply(event, "**🇮🇶 ⦙   لا يـمكنك كتم نـفسك**")
-        if user.id == 5187474956:
+        if user.id == 1397042354:
             return await edit_or_reply(event, "**- دي لا يمڪنني كتـم مبرمج السـورس **")
-        if user.id == 5187474956:
+        if user.id == 668571162
             return await edit_or_reply(event, "**- دي لا يمڪنني كتـم مبرمج السـورس **")
         userid = user.id
     try:
