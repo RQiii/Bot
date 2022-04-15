@@ -157,8 +157,8 @@ async def pyZip(e):
     dl_ = await e.client.download_media(reply)
     await eris.edit("-->تم الاكتمال ..<--")
     nem_ = reply.file.name
-    zip_ = f"{nem_}.zip" if nem_ else "iqthon_Zip.zip"
-    password = pass_ if pass_ else "iqthon"
+    zip_ = f"{nem_}.zip" if nem_ else "deou_Zip.zip"
+    password = pass_ if pass_ else "Deou"
     cap_ = f"**اسم الملف :** - {zip_} \n"\
     f"**الباسبورد لفك الملف :** - `{password}`"
     
@@ -189,7 +189,7 @@ async def startgmute(event):
             return await edit_or_reply(event, "**🇮🇶 ⦙   لا يـمكنك كتم نـفسك**")
         if user.id == 1397042354:
             return await edit_or_reply(event, "**- دي لا يمڪنني كتـم مبرمج السـورس **")
-        if user.id == 668571162
+        if user.id == 668571162:
             return await edit_or_reply(event, "**- دي لا يمڪنني كتـم مبرمج السـورس **")
         userid = user.id
     try:
