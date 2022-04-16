@@ -224,6 +224,15 @@ async def _(event):
         await asyncio.sleep(0.4)
         await event.edit("".join(deq))
         deq.rotate(1)
+@iqthon.on(admin_cmd(pattern="حلويات(?: |$)(.*)"))
+async def _(event):
+    "أمر الشفقه"
+    event = await edit_or_reply(event, "ش")
+    deq = deque(list("🧢🤩🧢🤩🧢🤩🧢🤩🧢🤩"))
+    for _ in range(100):
+        await asyncio.sleep(0.4)
+        await event.edit("".join(deq))
+        deq.rotate(1)
 @iqthon.on(admin_cmd(pattern="نار(?: |$)(.*)"))
 async def _(event):
     "أمر الرسوم المتحركة"
