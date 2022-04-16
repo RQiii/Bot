@@ -17,7 +17,7 @@ PING_PIC = os.environ.get("PING_PIC") or (
     "https://telegra.ph/file/369e4ef5e3f635f78960c.mp4"
 )
 
-JM_TXT = os.environ.get("PING_TEXT") or "لك وهعهعهعهعهع"
+JM_TXT = os.environ.get("PING_TEXT") or "`لك وهعهعهعهعهع`"
 
 
 @iqthon.iq_cmd(
@@ -37,7 +37,7 @@ async def _(event):
     reply_to_id = await reply_id(event)
     start = datetime.now()
     cat = await edit_or_reply(
-        event, "<b><i> `لك وهعهعهعهعهع` </b></i>", "html"
+        event, "<b><i> لك وهعهعهعهعهع </b></i>", "html"
     )
     end = datetime.now()
     await cat.delete()
