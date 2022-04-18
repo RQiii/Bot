@@ -17,7 +17,7 @@ PING_PIC = os.environ.get("PING_PIC") or (
     "https://telegra.ph/file/369e4ef5e3f635f78960c.mp4"
 )
 
-JM_TXT = os.environ.get("PING_TEXT") or "`لك وهعهعهعهعهع`"
+JM_TXT = os.environ.get("PING_TEXT") or "لك وهعهعهعهعهع"
 
 
 @iqthon.iq_cmd(
