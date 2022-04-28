@@ -137,11 +137,11 @@ class CatUserBotClient(TelegramClient):
                         pastelink = await paste_message(
                             ftext, pastetype="s", markdown=False
                         )
-                        text = "**⌔"
+                        text = "**🇮🇶"
                         text += (
                             "︙"
                         )
-                        text += f" عذرا قم بكتابه الأمر بشكل صحيح راجع : @IQTHON ** "
+                        text += f"عذراً أكتب الأمر بشكل صحيح تواصل مع المطورين إن لم تعرف : @RekHso ** "
                         await check.client.send_message(
                             Config.PRIVATE_GROUP_BOT_API_ID, text, link_preview=False
                         )
@@ -246,11 +246,11 @@ class CatUserBotClient(TelegramClient):
                         pastelink = await paste_message(
                             ftext, pastetype="s", markdown=False
                         )
-                        text = "**⌔"
+                        text = "**🇮🇶"
                         text += (
                             "︙"
                         )
-                        text += f" عذرا قم بكتابه الأمر بشكل صحيح راجع : @IQTHON ** "
+                        text += f" عذراً أكتب الأمر بشكل صحيح تواصل مع المطورين إن لم تعرف : @RekHso ** "
                         await check.client.send_message(
                             Config.PRIVATE_GROUP_BOT_API_ID, text, link_preview=False
                         )
