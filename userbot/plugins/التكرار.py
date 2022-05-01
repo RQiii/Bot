@@ -12,7 +12,7 @@ from ..helpers.utils import _catutils
 from ..sql_helper.globals import addgvar, gvarstatus
 from . import BOTLOG, BOTLOG_CHATID
 plugin_category = "extra"
-MUQT = gvarstatus("OR_MUQT") or "مؤقت"
+MUQT = gvarstatus("OR_MUQT") or "ريكولاس"
 
 
 async def spam_function(event, sandy, cat, sleeptimem, sleeptimet, DelaySpam=False):
